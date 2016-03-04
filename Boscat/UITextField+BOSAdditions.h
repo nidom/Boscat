@@ -10,4 +10,5 @@
 @class BOSConditionMaker;
 @interface UITextField (BOSAdditions)
 @property(nonatomic,strong,readonly) BOSConditionMaker * bos_make;
+@property(nonatomic,strong,readonly) BOSConditionMaker *apiBuild;
 @end
