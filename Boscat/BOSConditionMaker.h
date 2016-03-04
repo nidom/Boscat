@@ -14,7 +14,8 @@ typedef NS_OPTIONS(NSInteger, BOSAttribute) {
     BOSAttributeLength = 1 << 1,
     BOSAttributeContain = 1 << 2,
     BOSAttributeRegexp = 1 << 3
- };
+
+};
 
 
 @class  BOSCondition;
@@ -25,9 +26,5 @@ typedef NS_OPTIONS(NSInteger, BOSAttribute) {
 @property (nonatomic,strong,readonly)BOSCondition * contain;
 @property (nonatomic,strong,readonly)BOSCondition * regexp;
 @property (nonatomic, strong, readonly) BOSCondition *(^attributes)(BOSAttribute attrs);
-
-
-
-
 
 @end
