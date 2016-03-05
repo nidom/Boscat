@@ -8,13 +8,7 @@
 
 #import "UITextField+BOSAdditions.h"
 #import "BOSConditionMaker.h"
-#import <<#header#>>
+#import <objc/runtime.h>
 @implementation UITextField (BOSAdditions)
-
--(BOSConditionMaker *)bos_make{
- 
-    
-
-}
 
 @end

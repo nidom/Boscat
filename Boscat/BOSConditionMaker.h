@@ -8,15 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-
-typedef NS_OPTIONS(NSInteger, BOSAttribute) {
-    BOSAttributeType = 1 << 0,
-    BOSAttributeLength = 1 << 1,
-    BOSAttributeContain = 1 << 2,
-    BOSAttributeRegexp = 1 << 3
-
-};
-
+//
+//typedef NS_OPTIONS(NSInteger, BOSAttribute) {
+//    BOSAttributeType = 1 << 0,
+//    BOSAttributeLength = 1 << 1,
+//    BOSAttributeContain = 1 << 2,
+//    BOSAttributeRegexp = 1 << 3
+//
+//};
+//
 
 @class  BOSCondition;
 @interface BOSConditionMaker : NSObject
@@ -25,6 +25,6 @@ typedef NS_OPTIONS(NSInteger, BOSAttribute) {
 @property (nonatomic,strong,readonly)BOSCondition * length;
 @property (nonatomic,strong,readonly)BOSCondition * contain;
 @property (nonatomic,strong,readonly)BOSCondition * regexp;
-@property (nonatomic, strong, readonly) BOSCondition *(^attributes)(BOSAttribute attrs);
+//@property (nonatomic, strong, readonly) BOSCondition *(^attributes)(BOSAttribute attrs);
 
 @end
