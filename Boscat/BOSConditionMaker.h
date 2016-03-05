@@ -27,4 +27,8 @@
 @property (nonatomic,strong,readonly)BOSCondition * regexp;
 //@property (nonatomic, strong, readonly) BOSCondition *(^attributes)(BOSAttribute attrs);
 
+
+-(BOSConditionMaker *)match;
+-(BOSConditionMaker *)type;
+
 @end
