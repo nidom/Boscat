@@ -20,11 +20,11 @@
 
 @class  BOSCondition;
 @interface BOSConditionMaker : NSObject
-
-@property (nonatomic,strong,readonly)BOSCondition * type;
-@property (nonatomic,strong,readonly)BOSCondition * length;
-@property (nonatomic,strong,readonly)BOSCondition * contain;
-@property (nonatomic,strong,readonly)BOSCondition * regexp;
+//
+//@property (nonatomic,strong,readonly)BOSCondition * type;
+//@property (nonatomic,strong,readonly)BOSCondition * length;
+//@property (nonatomic,strong,readonly)BOSCondition * contain;
+//@property (nonatomic,strong,readonly)BOSCondition * regexp;
 //@property (nonatomic, strong, readonly) BOSCondition *(^attributes)(BOSAttribute attrs);
 
 
