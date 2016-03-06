@@ -8,27 +8,27 @@
 
 #import <Foundation/Foundation.h>
 
-//
-//typedef NS_OPTIONS(NSInteger, BOSAttribute) {
-//    BOSAttributeType = 1 << 0,
-//    BOSAttributeLength = 1 << 1,
-//    BOSAttributeContain = 1 << 2,
-//    BOSAttributeRegexp = 1 << 3
-//
-//};
-//
+typedef NS_ENUM(NSInteger,BOSRegexpType){
+    
+    BOSRegexpTypeInteger,
+    BOSRegexpTypePureNumber,
+    BOSRegexpTypeFloatNumber,
+    BOSRegexpTypeUrl,
+    BOSRegexpTypeEmail
+};
 
 @class  BOSCondition;
 @interface BOSConditionMaker : NSObject
-//
-//@property (nonatomic,strong,readonly)BOSCondition * type;
-//@property (nonatomic,strong,readonly)BOSCondition * length;
-//@property (nonatomic,strong,readonly)BOSCondition * contain;
-//@property (nonatomic,strong,readonly)BOSCondition * regexp;
-//@property (nonatomic, strong, readonly) BOSCondition *(^attributes)(BOSAttribute attrs);
 
 
--(BOSConditionMaker *)match;
--(BOSConditionMaker *)type;
+-(BOSConditionMaker * (^)(BOSRegexpType regexpType))type;
+-(BOSConditionMaker * (^)(BOSRegexpType regexpType))numberInterval;
+-(BOSConditionMaker * (^)(NSUInteger equalsNumber))lengthEquals;
+-(BOSConditionMaker * (^)(NSUInteger equalsNumber))lengthEquals;
+-(BOSConditionMaker * (^)(NSUInteger greaterOrEquals,NSUInteger lessOrEquals))lengthInterval;
+-(BOSConditionMaker * (^)(NSString * regexpString))regexp;
+-(BOSConditionMaker * (^)(NSString * containedString))contains;
+-(BOSConditionMaker * (^)(NSString * tagString))regexpWithTag;
+
 
 @end

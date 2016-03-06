@@ -7,6 +7,12 @@
 //
 
 #import "BOSConditionMaker.h"
+
+@interface BOSConditionMaker()
+
+
+@end
+
 @implementation BOSConditionMaker
 
 

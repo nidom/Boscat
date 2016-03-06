@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C700EFD01C8C8D6700C364CB /* NSString+BOSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C700EFCF1C8C8D6700C364CB /* NSString+BOSAdditions.m */; };
 		C75A3BB61C8701C700A35DD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C75A3BB51C8701C700A35DD6 /* main.m */; };
 		C75A3BB91C8701C700A35DD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C75A3BB81C8701C700A35DD6 /* AppDelegate.m */; };
 		C75A3BBC1C8701C700A35DD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C75A3BBB1C8701C700A35DD6 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C700EFCE1C8C8D6700C364CB /* NSString+BOSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BOSAdditions.h"; sourceTree = "<group>"; };
+		C700EFCF1C8C8D6700C364CB /* NSString+BOSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BOSAdditions.m"; sourceTree = "<group>"; };
 		C75A3BB11C8701C700A35DD6 /* Boscat Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boscat Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75A3BB51C8701C700A35DD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C75A3BB71C8701C700A35DD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +96,8 @@
 				C75A3BD91C88322F00A35DD6 /* BOSConditionMaker.m */,
 				C75A3BDE1C8843A000A35DD6 /* UITextField+BOSAdditions.h */,
 				C75A3BDF1C8843A000A35DD6 /* UITextField+BOSAdditions.m */,
+				C700EFCE1C8C8D6700C364CB /* NSString+BOSAdditions.h */,
+				C700EFCF1C8C8D6700C364CB /* NSString+BOSAdditions.m */,
 			);
 			name = Boscat;
 			path = ../../Boscat;
@@ -168,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C700EFD01C8C8D6700C364CB /* NSString+BOSAdditions.m in Sources */,
 				C75A3BE01C8843A000A35DD6 /* UITextField+BOSAdditions.m in Sources */,
 				C75A3BBC1C8701C700A35DD6 /* ViewController.m in Sources */,
 				C75A3BDA1C88322F00A35DD6 /* BOSConditionMaker.m in Sources */,
