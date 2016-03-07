@@ -16,6 +16,7 @@
 		C75A3BC41C8701C700A35DD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75A3BC21C8701C700A35DD6 /* LaunchScreen.storyboard */; };
 		C75A3BDA1C88322F00A35DD6 /* BOSConditionMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = C75A3BD91C88322F00A35DD6 /* BOSConditionMaker.m */; };
 		C75A3BE01C8843A000A35DD6 /* UITextField+BOSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C75A3BDF1C8843A000A35DD6 /* UITextField+BOSAdditions.m */; };
+		C7FA31831C8DC91F00B27514 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FA31821C8DC91F00B27514 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		C75A3BD91C88322F00A35DD6 /* BOSConditionMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOSConditionMaker.m; sourceTree = "<group>"; };
 		C75A3BDE1C8843A000A35DD6 /* UITextField+BOSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+BOSAdditions.h"; sourceTree = "<group>"; };
 		C75A3BDF1C8843A000A35DD6 /* UITextField+BOSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+BOSAdditions.m"; sourceTree = "<group>"; };
+		C7FA31821C8DC91F00B27514 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7FA31831C8DC91F00B27514 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +54,7 @@
 		C75A3BA81C8701C700A35DD6 = {
 			isa = PBXGroup;
 			children = (
+				C7FA31821C8DC91F00B27514 /* CoreGraphics.framework */,
 				C75A3BB31C8701C700A35DD6 /* Boscat Example */,
 				C75A3BB21C8701C700A35DD6 /* Products */,
 			);

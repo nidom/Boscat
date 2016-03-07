@@ -11,10 +11,13 @@
 #import <objc/runtime.h>
 @implementation NSString (BOSAdditions)
 -(BOSConditionMaker *)bos_make{
+    
+
     BOSConditionMaker * make =  objc_getAssociatedObject(self,_cmd);
     if (make == nil) {
         make = [BOSConditionMaker new];
         objc_setAssociatedObject(self,_cmd, make, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    
     }
     return  make;
 }
