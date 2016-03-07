@@ -15,8 +15,6 @@
 
 @implementation BOSConditionMaker
 
--(void)test1{
 
-}
 
 @end

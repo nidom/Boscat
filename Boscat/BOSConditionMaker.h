@@ -24,38 +24,28 @@ typedef NS_ENUM(NSInteger,BOSRegexpType){
     BOSRegexpTypeUrl,
     BOSRegexpTypeEmail
 };
+typedef NS_OPTIONS(NSInteger, BOSOptions) {
+
+     BOSOptionsRegexp =1<<0,
+     BOSOptionsContains =1<<1,
+     BOSOptionsLength =1<<2,
+     BOSOptionsNumber =1<<3,
+     BOSOptionsType =1<<4,
+
+};
 @interface BOSConditionMaker : NSObject
 
 -(BOSConditionMaker * (^)(NSString * regexpString))regexp;
 -(BOSConditionMaker * (^)(NSString * containedString))contains;
--(BOSConditionMaker * (^)(NSString * tagString))regexpWithTag;
-
-#pragma mark-
-#pragma mark-LengthCondditons
-
--(BOSConditionMaker * (^)(NSUInteger greaterThan))lengthGreaterThan;
--(BOSConditionMaker * (^)(NSUInteger greaterOrEquals))lengthGreaterOrEquals;
--(BOSConditionMaker * (^)(NSUInteger lessThan))lengthLessThan;
--(BOSConditionMaker * (^)(NSUInteger lessThanOrEquals))lengthLessThanOrEquals;
--(BOSConditionMaker * (^)(NSUInteger equals))lengthEquals;
-
-#pragma mark-
-#pragma mark-TypeConddtions
-
 -(BOSConditionMaker * (^)(BOSRegexpType regexpType))type;
+-(BOSConditionMaker * (^)(void))length;
+-(BOSConditionMaker * (^)(void))number;
+-(BOSConditionMaker * (^)(id arttribute))bos_equals;
+-(BOSConditionMaker * (^)(id arttribute))bos_greaterThan;
+-(BOSConditionMaker * (^)(id arttribute))bos_lessThan;
+-(BOSConditionMaker * (^)(id arttribute))bos_greaterThanOrEquals;
+-(BOSConditionMaker * (^)(id arttribute))bos_lessThanOrEquals;
 #pragma mark-
-#pragma mark-NumberConddtions
-
--(BOSConditionMaker * (^)(BOSFloat greaterThan))numherGreaterThan;
--(BOSConditionMaker * (^)(BOSFloat greaterThanOrEquals))numherGreaterThanOrEquals;
--(BOSConditionMaker * (^)(BOSFloat lessThen))numherLessThen;
--(BOSConditionMaker * (^)(BOSFloat lessThenOrEquals))numherLessThenOrEquals;
--(BOSConditionMaker * (^)(BOSFloat equals))numherEquals;
-
-
-#pragma mark-
-#pragma mark-NumberConddtions
-
--(BOSConditionMaker * (^)(BOSFloat equals))failed;
-
+#pragma mark-FailedBlock
+-(BOSConditionMaker * (^)(BOSOptions options))failed;
 @end
