@@ -35,9 +35,7 @@ typedef NS_OPTIONS(NSInteger, BOSOptions) {
 };
 
 
-
 @interface BOSConditionMaker : NSObject
-
 -(BOSConditionMaker * (^)(NSString * regexpString))regexp;
 -(BOSConditionMaker * (^)(NSString * containedString))contains;
 -(BOSConditionMaker * (^)(BOSRegexpType regexpType))type;
