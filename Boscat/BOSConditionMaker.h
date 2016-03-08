@@ -33,6 +33,9 @@ typedef NS_OPTIONS(NSInteger, BOSOptions) {
      BOSOptionsType =1<<4,
 
 };
+
+
+
 @interface BOSConditionMaker : NSObject
 
 -(BOSConditionMaker * (^)(NSString * regexpString))regexp;
@@ -47,5 +50,5 @@ typedef NS_OPTIONS(NSInteger, BOSOptions) {
 -(BOSConditionMaker * (^)(id arttribute))bos_lessThanOrEquals;
 #pragma mark-
 #pragma mark-FailedBlock
--(BOSConditionMaker * (^)(BOSOptions options))failed;
+//-(BOSConditionMaker * (^)(BOSOptions options))failed;
 @end
