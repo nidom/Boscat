@@ -15,6 +15,9 @@
 
 @implementation BOSConditionMaker
 
+-(void)setNilValueForKey:(NSString *)key{
 
+
+}
 
 @end
