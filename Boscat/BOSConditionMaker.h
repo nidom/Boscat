@@ -24,15 +24,15 @@ typedef NS_ENUM(NSInteger,BOSRegexpType){
     BOSRegexpTypeUrl,
     BOSRegexpTypeEmail
 };
-typedef NS_OPTIONS(NSInteger, BOSOptions) {
-
-     BOSOptionsRegexp =1<<0,
-     BOSOptionsContains =1<<1,
-     BOSOptionsLength =1<<2,
-     BOSOptionsNumber =1<<3,
-     BOSOptionsType =1<<4,
-
-};
+//typedef NS_OPTIONS(NSInteger, BOSOptions) {
+//
+//     BOSOptionsRegexp =1<<0,
+//     BOSOptionsContains =1<<1,
+//     BOSOptionsLength =1<<2,
+//     BOSOptionsNumber =1<<3,
+//     BOSOptionsType =1<<4,
+//
+//};
 
 
 @interface BOSConditionMaker : NSObject
